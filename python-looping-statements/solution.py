@@ -6,7 +6,7 @@ def countdown_with_skip(start: int) -> list:
     Do not use break here.
     Return the resulting list.
     """
-    pass
+    
     count = start 
     ans_list = []
     while count > 0:
@@ -26,7 +26,7 @@ def find_first_negative(numbers: list) -> int | None:
     If no negative number exists, use the loop's else clause to
     return None after the loop completes normally.
     """
-    pass
+    
     length = len(numbers) - 1
     index = 0
     while index <= length:
@@ -47,7 +47,7 @@ def sum_with_index(numbers: list) -> dict:
     Example: sum_with_index([10, 20, 30])
     -> {0: 10, 1: 30, 2: 60}
     """
-    pass
+    
     di = {}
     sum = 0
     for index , value in enumerate(numbers):
@@ -66,7 +66,7 @@ def manual_iteration_trace(items: list) -> list:
     Return a list of all elements retrieved this way, in order
     (it should exactly match the original `items` list).
     """
-    pass
+    
     i = iter(items)
     state = True
     ans_list = []
