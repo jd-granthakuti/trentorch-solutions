@@ -10,7 +10,7 @@ def countdown_with_skip(start: int) -> list:
     count = start 
     ans_list = []
     while count > 0:
-        if count%3 == 0:
+        if count == 3:
             count -= 1
             continue
         ans_list.append(count)
