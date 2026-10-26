@@ -1,20 +1,16 @@
 def is_truthy(value) -> bool:
     if value is None:
         return False
-    elif type(value) == int or type(value) == float:
-        if value == 0 :
-            return False
-    elif type(value) is bool:
-        if not value:
-            return False
-    elif len(value) == 0:
-        return False
+    if isinstance(value, bool):
+        return value
+    if isinstance(value,(int,float)):
+        return value != 0
+    if isinstance(value,(str,list,tuple,dict,set)):
+        return len(value) > 0
     return True
 
-
 def first_truthy(values: list):
-    for i in range(len(values)):
-        if values[i]:
-            return values[i]
-
+    for value in values:
+        if is_truthy(value):
+            return value
     return None
