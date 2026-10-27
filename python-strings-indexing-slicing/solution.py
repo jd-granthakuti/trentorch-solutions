@@ -8,7 +8,7 @@ def first_and_last(s: str) -> str:
 
     Example: first_and_last("python") -> "pn"
     """
-    pass
+    
     if len(s) == 0 :
         return ""
     if len(s) == 1 :
@@ -36,7 +36,7 @@ def every_kth_from(s: str, start: int, k: int) -> str:
 
     Example: every_kth_from("abcdefgh", 1, 3) -> "beh"
     """
-    pass
+    
 
     if start < (len(s) * -1) or start >= len(s) :
         return ""
